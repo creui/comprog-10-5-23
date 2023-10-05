@@ -16,14 +16,16 @@ int main () {
         cout << "Input an integer: ";
         cin >> num;
 
-        cout << endl;
+        cout << endl << num;
 
         if (num > 0)
-            cout << num << " is positive." << endl;
+            cout << " is positive.";
         else if (num < 0)
-            cout << num << " is negative." << endl;
+            cout << " is negative.";
         else if (num == 0)
-            cout << num << " is equal to 0." << endl;
+            cout << " is equal to 0.";
+
+        cout << endl;
 
     }
     else if (program == 2) {
