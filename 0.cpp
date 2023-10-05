@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int main (int argc, char *argv[]) {
+int main () {
     int program;
-    cout << endl << "[1] Program 1" << endl << "[2] Program 2" << endl << "[3] Even Group" << endl << endl;
 
+    cout << endl << "[1] Program 1" << endl << "[2] Program 2" << endl << "[3] Even Group" << endl << endl;
     cin >> program;
 
     cout << endl;
@@ -18,15 +18,12 @@ int main (int argc, char *argv[]) {
 
         cout << endl;
 
-        if (num > 0) {
+        if (num > 0)
             cout << num << " is positive." << endl;
-        }
-        else if (num < 0) {
+        else if (num < 0)
             cout << num << " is negative." << endl;
-        }
-        else if (num == 0) {
+        else if (num == 0)
             cout << num << " is equal to 0." << endl;
-        }
 
     }
     else if (program == 2) {
@@ -151,9 +148,8 @@ int main (int argc, char *argv[]) {
 
         cout << endl;
     }
-    else {
+    else
         cout << "Invalid input." << endl;
-    }
 
     return 0;
 }
