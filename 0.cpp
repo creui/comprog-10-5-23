@@ -147,11 +147,11 @@ int main () {
             cout << "Y";
         else if (num == 35)
             cout << "Z";
-
-        cout << endl;
     }
     else
-        cout << "Invalid input." << endl;
+        cout << "Invalid input.";
+
+    cout << endl;
 
     return 0;
 }
