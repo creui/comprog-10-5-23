@@ -24,13 +24,10 @@ int main () {
             cout << " is negative.";
         else if (num == 0)
             cout << " is equal to 0.";
-
-        cout << endl;
-
     }
     else if (program == 2) {
         int num1, num2, num3;
-	
+
         cout << "Input the first integer: ";
         cin >> num1;
         cout << "Input the second integer: ";
@@ -48,7 +45,7 @@ int main () {
             else if (num1 < num3)
                 cout << "The numbers in ascending order is: " << num1 << ", " << num2 << ", " << num3;
         }
-        else if (num1 == num3){
+        else if (num1 == num3) {
             if (num1 > num2)
                 cout << "The numbers in ascending order is: " << num2 << ", " << num3 << ", " << num1;
             else if (num1 < num2)
@@ -66,22 +63,18 @@ int main () {
             else if (num3 > num2)
                 cout << "The numbers in ascending order is: " << num2 << ", " << num3 << ", " << num1;
         }
-        else if (num2 > num1 && num2 > num3)
-        {
+        else if (num2 > num1 && num2 > num3) {
             if (num1 > num3)
                 cout << "The numbers in ascending order is: " << num3 << ", " << num1 << ", " << num2;
             else if (num3 > num1)
                 cout << "The numbers in ascending order is: " << num1 << ", " << num3 << ", " << num2;
         }
-        else if (num3 > num1 && num3 > num2)
-        {
+        else if (num3 > num1 && num3 > num2) {
             if (num1 > num2)
                 cout << "The numbers in ascending order is: " << num2 << ", " << num1 << ", " << num3;
             else if (num2 > num1)
                 cout << "The numbers in ascending order is: " << num1 << ", " << num2 << ", " << num3;
         }
-
-        cout << endl;
     }
     else if (program == 3) {
         int num;
