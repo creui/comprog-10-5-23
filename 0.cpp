@@ -26,7 +26,7 @@ int main () {
             cout << " is equal to 0.";
     }
     else if (program == 2) {
-        int num1, num2, num3;
+        int num1, num2, num3, tmp;
 
         cout << "Input the first integer: ";
         cin >> num1;
@@ -37,44 +37,23 @@ int main () {
 
         cout << endl;
 
-        if (num1 == num2 && num2 == num3)
-            cout << "All numbers are equal.";
-        else if (num1 == num2) {
-            if (num1 > num3)
-                cout << "The numbers in ascending order is: " << num3 << ", " << num2 << ", " << num1;
-            else if (num1 < num3)
-                cout << "The numbers in ascending order is: " << num1 << ", " << num2 << ", " << num3;
+        if (num1 > num3) {
+            tmp = num1;
+            num1 = num3;
+            num3 = tmp;
         }
-        else if (num1 == num3) {
-            if (num1 > num2)
-                cout << "The numbers in ascending order is: " << num2 << ", " << num3 << ", " << num1;
-            else if (num1 < num2)
-                cout << "The numbers in ascending order is: " << num1 << ", " << num3 << ", " << num2;
+        if (num1 > num2) {
+            tmp = num1;
+            num1 = num2;
+            num2 = tmp;
         }
-        else if (num2 == num3) {
-            if (num2 > num1)
-                cout << "The numbers in ascending order is: " << num1 << ", " << num3 << ", " << num2;
-            else if (num2 < num1)
-                cout << "The numbers in ascending order is: " << num2 << ", " << num3 << ", " << num1;
+        if (num2 > num3) {
+            tmp = num2;
+            num2 = num3;
+            num3 = tmp;
         }
-        else if (num1 > num2 && num1 > num3) {
-            if (num2 > num3)
-                cout << "The numbers in ascending order is: " << num3 << ", " << num2 << ", " << num1;
-            else if (num3 > num2)
-                cout << "The numbers in ascending order is: " << num2 << ", " << num3 << ", " << num1;
-        }
-        else if (num2 > num1 && num2 > num3) {
-            if (num1 > num3)
-                cout << "The numbers in ascending order is: " << num3 << ", " << num1 << ", " << num2;
-            else if (num3 > num1)
-                cout << "The numbers in ascending order is: " << num1 << ", " << num3 << ", " << num2;
-        }
-        else if (num3 > num1 && num3 > num2) {
-            if (num1 > num2)
-                cout << "The numbers in ascending order is: " << num2 << ", " << num1 << ", " << num3;
-            else if (num2 > num1)
-                cout << "The numbers in ascending order is: " << num1 << ", " << num2 << ", " << num3;
-        }
+
+        cout << "The numbers in ascending order: " << num1 << ", " << num2 << ", " << num3;
     }
     else if (program == 3) {
         int num;
